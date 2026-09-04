@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Flavor — Banner</title>
+  <meta name="description" content="Interactive tech gear banner: mechanical keyboards, ultralight mice and studio headsets with choreographed transitions."/>
+  <link rel="stylesheet" href="./fonts/fonts.css"/>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div id="app" class="tf-root">
+    <!-- Bandeau promo -->
+    <div class="tf-bar">
+      <div class="tf-bar-bg"></div>
+      <div class="tf-bar-slide"></div>
+      <span class="tf-bar-text">⚡⚡ Get 10% OFF on Your First Setup — Power Up Your Desk ⚡⚡</span>
+    </div>
+
+    <main class="tf-stage" aria-label="Tech gear showcase banner">
+      <!-- Couches de scène (générées par JS) -->
+      <div class="tf-layer" data-slot="0"></div>
+      <div class="tf-layer" data-slot="1"></div>
+
+      <!-- Description produit -->
+      <p class="tf-desc"></p>
+
+      <!-- Boutons -->
+      <div class="tf-actions">
+        <button type="button" class="tf-btn tf-btn-menu">View Menu</button>
+        <button type="button" class="tf-btn tf-btn-find">Find Us</button>
+      </div>
+
+      <!-- Nav pill -->
+      <nav class="tf-nav" aria-label="Primary">
+        <a href="#" class="tf-nav-link">SHOP</a>
+        <a href="#" class="tf-nav-link">ABOUT</a>
+        <a href="#" class="tf-nav-link">GALLERY</a>
+        <a href="#" class="tf-nav-link">SUPPORT</a>
+      </nav>
+
+      <!-- CTA -->
+      <button type="button" class="tf-cta"><span class="tf-cta-label">Order Now →</span></button>
+
+      <!-- Flèches -->
+      <button type="button" class="tf-arrow tf-arrow-prev" aria-label="Previous product">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M14.5 5.5 8 12l6.5 6.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button type="button" class="tf-arrow tf-arrow-next" aria-label="Next product">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9.5 5.5 16 12l-6.5 6.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </main>
+  </div>
+
+  <script src="./gsap.min.js"></script>
+  <script src="./banner.js"></script>
+</body>
+</html>
